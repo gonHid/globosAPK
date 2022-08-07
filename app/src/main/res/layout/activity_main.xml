@@ -6,33 +6,4 @@
     android:layout_height="match_parent"
     android:background="#000000"
     tools:context=".MainActivity"
-    android:id="@+id/contenedor">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="PRUEBA DE GLOBITO"
-        android:textColor="#DCD2D2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
-
-    <ImageView
-        android:id="@+id/globo"
-
-        android:layout_width="350dp"
-        android:layout_height="400dp"
-        android:adjustViewBounds="true"
-        android:background="@drawable/background_list"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.531"
-        app:srcCompat="@drawable/globoi" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    android:id="@+id/contenedor"/>
