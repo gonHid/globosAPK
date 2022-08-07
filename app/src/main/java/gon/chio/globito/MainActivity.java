@@ -69,12 +69,12 @@ public class MainActivity extends AppCompatActivity {
     public void posicionar(){
         //preparo una posicion previa al movimiento, la cual es al azar
 
-        int max = 9,  min = 0,posX;
+        int max = contenedor.getWidth();
+        int min = 0,posX;
         int range = max - min + 1;
 
-
-        posX = (int)(Math.random() * range) + min;
-        posX = posX * 100;
+        //intentando evitar que se posicionen por fuera del layout para cualquier dispositivo
+        posX = ((int)(Math.random() * range) + min)-(globos.get(contador).getWidth()/2);
 
           /*Toast toast = Toast.makeText(this,"posX: "+ posX + "\n contador: "+contador, Toast.LENGTH_LONG);
         toast.show();*/
